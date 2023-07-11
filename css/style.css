@@ -1,150 +1,267 @@
-/* .grid {
-    width: 1230px;
-    height: 6970px;
-} */
-
-
-/*.mountains {
-    background-image: url("img/bg_mountains.png");
-} */
-
-/* header {
-    background: #000000;
-} */
-
-body {
-    width: 1920px;
-    height:6351px;
-    margin: 0;
-    padding: 0;
-    /* background-image: url("img/bg_mountains.png"); */
-    background-repeat: no-repeat;
+/* raleway-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/raleway-v28-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-a {
-    text-decoration:  none;
-    color: #FFFFFF;
+/* raleway-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/raleway-v28-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-ul {
-    list-style-type: none;
+/* raleway-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/raleway-v28-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-h1 {
-    font-family: Raleway;
+/* raleway-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Raleway';
+    font-style: normal;
     font-weight: 800;
-    font-size: 52px;
-    color: #FFFFFF;
-    letter-spacing: 0;
-    margin:0;
-    /* text-align: center; */
+    src: url('../fonts/raleway-v28-latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-h2 {
-    font-family: Raleway;
-    font-weight:500;
-    font-size: 36px;
-    color: #FFFFFF;
-    letter-spacing: 0;
-    /* text-align: center; */
-    margin:0;
-}
-
-p {
-    font-family: Montserrat;
+/* montserrat-300 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
     font-weight: 300;
-    font-size: 16px;
-    color: #FFFFFF;
-    letter-spacing: 0;
-    /* text-align: center; */
+    src: url('../fonts/montserrat-v25-latin-300.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* *** */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body, p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 300;
+    color: #8C8C8C;
     line-height: 24px;
 }
 
-.navigation {
-    display: grid;
-    /* grid-template-columns: 181px 667px 18px 24px; */
-    grid-template-columns: 400px 700px 46px 24px;
-    width: 1170px;
-    /* margin: 0; */
-    margin-left: 376px;
-}
 
-.logo-container {
-    display: flex;
+h1,h2,h3,h4,.logo {
     margin:0;
-    margin-top: 40px;
-    height: 56px;
-    border: 2px solid blue;
+    font-family: 'Raleway';
+    letter-spacing: 0;
+    text-align: center;
 }
 
-/* .logo-img {} */
-
-.waxom {
-    font-family: Raleway-Regular;
-    font-size: 34px;
-    color: #FFFFFF;
-    letter-spacing: -1.36px;
-    text-align: right;
-    align-self: flex-end;
+ol, ul {
+	list-style: none;
 }
 
-.menu {
+a {
+    text-decoration: none;
+}
+
+button {
+    width: 170px;
+    height: 50px;
+    font-family: 'Raleway';
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 23px;
+    color: white;
+    border-radius: 5px;
+    background: linear-gradient(0deg, #998675, #998675);
+    box-shadow: inset 0px -3px 0px #736357;
+}
+
+.wrapper {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+/* HEADER STYLES START */
+
+.header__wrap {
     display: flex;
-    margin: 0;
-    padding:0;
-    margin-top: 61px;
-    height: 19px;
-    align-items: flex-start;
-    border: 2px solid coral;
-    /* margin-right: 63px; */
+    flex-wrap: wrap;
+    padding-top: 40px; /************************/
+    margin-left: 30px; /************************/
+    margin-right: 30px; /************************/
+    align-items: center;
+    justify-content: space-between;
 }
 
-.menu__item {
-    font-family: Montserrat;
+.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 637px; /************************/
+    margin:0;
+    margin-right: 63px; /************************/
+    padding: 0;
+    list-style: none;
     font-weight: 300;
-    font-size: 14px;
+}
+
+.nav-menu__link {
     color: #FFFFFF;
-    letter-spacing: 0;
-    padding-right: 30px;
-    white-space: nowrap;
-    border: 2px solid green;
+
 }
 
-
-
- .active {
-    font-family: Montserrat Light;
-    font-size: 14px;
+.nav-menu__link:hover, .nav-menu__link:focus, .nav-menu__link:active {
     color: #C7B299;
-    letter-spacing: 0;
 }
 
-.cart {
-    margin-top: 55px;
-    border: 2px solid skyblue;
+.header__logo {
+    margin-right: 219px; /************************/
+    align-items: center; 
 }
 
 .search {
-    margin-top: 55px;
-    border: 2px solid violet;
+    margin-left: auto;
 }
 
-.slogan {
+/* HEADER STYLES END */
+
+/* HERO STYLES START */
+
+.hero {
+    min-height: 100vh; /************************/
+    background: url(../img/bg_hero.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 381px; /************************/
     text-align: center;
-    width: 619px;
-    margin-left: auto;
-    margin-right:auto;
-    margin-top: 285px;
-    border: 2px solid violet;
 }
 
-.get_started {
+.slogan-wrapper {
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.hero__subtitle{
+    font-weight: 500;
+    font-size: 36px;
+    color: #FFFFFF;
+    line-height: 42px;
+}
+
+.hero__title {
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 61px;
+    color: #FFFFFF;
+    }
+
+.hero__slogan {
+    padding-bottom: 47px;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 24px;
+    }
+
+.get-started {
     height: 53px;
-    width:170px;
-    margin-left: auto;
-    margin-right:auto;
+}
+
+/* MEDIA QUERIES CSS START*/
+
+@media screen and (max-width: 1230px) {
 
 }
 
-
-
+/* MEDIA QUERIES CSS END*/
