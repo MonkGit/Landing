@@ -162,6 +162,12 @@ button {
     box-shadow: inset 0px -3px 0px #736357;
 }
 
+.first-block {
+    min-height: 100vh;
+    background: url(../img/bg_hero.jpg) no-repeat center;
+    background-size: cover;
+}
+
 .wrapper {
     max-width: 1230px;
     margin: 0 auto;
@@ -172,28 +178,27 @@ button {
 .header__wrap {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 40px; /************************/
-    margin-left: 30px; /************************/
-    margin-right: 30px; /************************/
+    padding-top: 3%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .page-header {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
+}
+
+.header__nav {
+    display: flex; 
+    width: 770px; /*****************/
+    justify-content: space-between;
+
 }
 
 .nav-menu {
     display: flex;
     flex-wrap: wrap;
+    width: 637px; /*****************/
     justify-content: space-between;
-    width: 637px; /************************/
-    margin:0;
-    margin-right: 63px; /************************/
-    padding: 0;
     list-style: none;
     font-weight: 300;
 }
@@ -207,30 +212,27 @@ button {
     color: #C7B299;
 }
 
-.header__logo {
-    margin-right: 219px; /************************/
-    align-items: center; 
-}
-
-.search {
-    margin-left: auto;
-}
-
 /* HEADER STYLES END */
 
 /* HERO STYLES START */
-
-.hero {
-    min-height: 100vh; /************************/
-    background: url(../img/bg_hero.jpg) no-repeat center;
-    background-size: cover;
-    padding-top: 381px; /************************/
-    text-align: center;
+.main-content {
+    height: 261px;
+    margin-bottom: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.slogan-wrapper {
-    max-width: 620px;
-    margin: 0 auto;
+.hero {
+    min-height: 100vh;
+    max-width: 640px;
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .hero__subtitle{
@@ -243,12 +245,11 @@ button {
 .hero__title {
     font-weight: 800;
     font-size: 52px;
-    line-height: 61px;
+    line-height: 60px;
     color: #FFFFFF;
     }
 
 .hero__slogan {
-    padding-bottom: 47px;
     font-size: 16px;
     color: #FFFFFF;
     line-height: 24px;
@@ -260,8 +261,85 @@ button {
 
 /* MEDIA QUERIES CSS START*/
 
-@media screen and (max-width: 1230px) {
+@media screen and (min-width:992px) and (max-width: 1230px) {
+    .header__wrap {
+        flex-direction: column;
+    }
+}
 
+@media screen and (max-width: 991px) {
+        
+    .header__wrap {
+        flex-direction: column;
+        align-items: baseline;
+        flex-wrap: nowrap;
+    } 
+    .header__logo {
+        width: 100%;
+        text-align: center;
+    }
+    .header__nav {
+        display: block;
+        margin-left: auto;
+        width: 100px;
+        text-align: end;
+        margin-right: 40px
+    }
+       
+    .nav-menu {
+        display: block;
+        width:100%;
+    }
+
+    .nav-menu :last-child {
+        margin-bottom: 10px;
+    }
+
+    .search {
+        padding-left:10px;
+    }
+
+    .main-content {
+        margin-bottom: 60%;
+    }
+
+    .hero__subtitle {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .hero__title {
+        font-size: 46px;
+        line-height: 54px;
+    }
+
+    .hero__slogan {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    body {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .hero__subtitle {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .hero__title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .hero__slogan {
+        font-size: 12px;
+        line-height: 20px;
+    }
 }
 
 /* MEDIA QUERIES CSS END*/
