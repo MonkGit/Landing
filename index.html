@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Landing Page</title>
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/font-style.css" rel="stylesheet">
+    <link href="./css/style__common_body.css" rel="stylesheet">
+    <link href="./css/style__header.css" rel="stylesheet">
+    <link href="./css/style__main-content.css" rel="stylesheet">
 </head>
 
 <body>
@@ -31,29 +35,249 @@
                             <li class="nav-menu__item"><a href="#" class="nav-menu__link">Shortcodes</a></li>
                             <li class="nav-menu__item"><a href="#" class="nav-menu__link">Contact</a></li>
                         </ul>
-                            <a href="#" class="cart">
-                                <img src="./img/svg/cart.svg" alt="Cart" width="20px">
-                            </a>
-                            <a href="#" class="search">
-                                <img src="./img/svg/search.svg" alt="Search">
-                            </a>
+                        <a href="#" class="cart">
+                            <img src="./img/svg/cart.svg" alt="Cart" width="20px">
+                        </a>
+                        <a href="#" class="search">
+                            <img src="./img/svg/search.svg" alt="Search">
+                        </a>
                     </nav>
                 </div>
             </header>
-            <!--========== HEADER ENDS==========-->
+            <!--==========HEADER END==========-->
+
+            <!--==========Section Hero==========-->
             <section class="hero">
-                <div class="main-content">
-                <div class="text-box">
-                    <h2 class="hero__subtitle">Unique and Modern Design</h2>
-                    <h1 class="hero__title">Portfolio PSD Template</h1>
-                    <p class="hero__slogan">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
-                        doming id quod mazim placerat facer possim assum.</p>
+                <div class="hero__content">
+                    <div class="hero__text-box">
+                        <h2 class="hero__subtitle">Unique and Modern Design</h2>
+                        <h1 class="hero__title">Portfolio PSD Template</h1>
+                        <p class="hero__slogan">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
+                            doming id quod mazim placerat facer possim assum.</p>
+                    </div>
+                    <button type="button" class="get-started">Get Started</button>
                 </div>
-                <button type="button" class="get-started">Get Started</button>
-            </div>
             </section>
+            <!--==========Section Hero End==========-->
         </div>
     </div>
+    <!--==========Section Services==========-->
+    <div class="wrapper">
+        <section class="services">
+            <div class="services__item design">
+                <a href="#design" class="services__item_link">
+                    <svg class="services__item_icon" width="49" height="49" viewBox="0 0 49 49" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M45.4196 17.4697C46.0394 16.8473 47.0433 16.8473 47.668 17.4697C48.2892 18.0903 48.2892 19.0999 47.668 19.7172L33.4018 33.9852L0.534198 48.4635L15.0109 15.5914L29.2786 1.32717C29.8984 0.705649 30.904 0.705649 31.527 1.32717C32.1482 1.94991 32.1482 2.95485 31.527 3.57553L17.6831 17.4223L9.10665 36.8879L12.1057 39.8866L31.5733 31.3139L45.4196 17.4697ZM28.6201 28.9314C28.2112 28.9314 27.805 28.7735 27.4952 28.4661C26.8754 27.8433 26.8754 26.8363 27.4952 26.2164L40.8269 12.8848C41.4498 12.2604 42.4538 12.2604 43.0767 12.8848C43.6996 13.5055 43.6996 14.5105 43.0767 15.134L29.7452 28.4661C29.4337 28.7735 29.0276 28.9314 28.6201 28.9314ZM24.0151 24.9854C24.3265 25.2933 24.7341 25.4499 25.1399 25.4499C25.549 25.4499 25.955 25.2933 26.2649 24.9854L39.5981 11.6526C40.2194 11.0302 40.2194 10.0232 39.5981 9.40295C38.9738 8.78021 37.9698 8.78021 37.3481 9.40295L24.0151 22.7346C23.3937 23.3544 23.3937 24.3644 24.0151 24.9854ZM21.6592 21.9681C21.2531 21.9681 20.8448 21.8135 20.5341 21.5024C19.9136 20.883 19.9136 19.8734 20.5341 19.2532L33.8666 5.92239C34.4895 5.29837 35.4952 5.29837 36.1165 5.92239C36.7394 6.54224 36.7394 7.54762 36.1165 8.17242L22.7839 21.5024C22.4732 21.8135 22.065 21.9681 21.6592 21.9681Z"
+                            fill="#C7B299" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M45.4196 17.4697C46.0394 16.8473 47.0433 16.8473 47.668 17.4697C48.2892 18.0903 48.2892 19.0999 47.668 19.7172L33.4018 33.9852L0.534198 48.4635L15.0109 15.5914L29.2786 1.32717C29.8984 0.705649 30.904 0.705649 31.527 1.32717C32.1482 1.94991 32.1482 2.95485 31.527 3.57553L17.6831 17.4223L9.10665 36.8879L12.1057 39.8866L31.5733 31.3139L45.4196 17.4697ZM28.6201 28.9314C28.2112 28.9314 27.805 28.7735 27.4952 28.4661C26.8754 27.8433 26.8754 26.8363 27.4952 26.2164L40.8269 12.8848C41.4498 12.2604 42.4538 12.2604 43.0767 12.8848C43.6996 13.5055 43.6996 14.5105 43.0767 15.134L29.7452 28.4661C29.4337 28.7735 29.0276 28.9314 28.6201 28.9314ZM24.0151 24.9854C24.3265 25.2933 24.7341 25.4499 25.1399 25.4499C25.549 25.4499 25.955 25.2933 26.2649 24.9854L39.5981 11.6526C40.2194 11.0302 40.2194 10.0232 39.5981 9.40295C38.9738 8.78021 37.9698 8.78021 37.3481 9.40295L24.0151 22.7346C23.3937 23.3544 23.3937 24.3644 24.0151 24.9854ZM21.6592 21.9681C21.2531 21.9681 20.8448 21.8135 20.5341 21.5024C19.9136 20.883 19.9136 19.8734 20.5341 19.2532L33.8666 5.92239C34.4895 5.29837 35.4952 5.29837 36.1165 5.92239C36.7394 6.54224 36.7394 7.54762 36.1165 8.17242L22.7839 21.5024C22.4732 21.8135 22.065 21.9681 21.6592 21.9681Z"
+                            fill="#555555" />
+                    </svg>
+                    Web & App Design</a>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                <svg class="services__item_underline" width="70" height="3" viewBox="0 0 70 3" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M-7e-05 -0.000129H69.9999V2.9998H-7e-05V-0.000129Z"
+                        fill="#F1EEE9" />
+                </svg>
+            </div>
+            <div class="services__item development ">
+                <a href="#development" class="services__item_link">
+                    <svg class="services__item_icon" width="44" height="40" viewBox="0 0 44 40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M21.8505 0.10552L0.413556 11.6657L21.8505 23.2271L43.2873 11.6657L21.8505 0.10552ZM21.8505 26.9578L4.39872 17.548L0.413556 19.6966L21.8505 31.2534L43.2873 19.6966L39.3023 17.548L21.8505 26.9578ZM4.39872 25.5731L21.8505 34.9846L39.3023 25.5731L43.2873 27.7205L21.8505 39.2832L0.413556 27.7205L4.39872 25.5731Z"
+                            fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M21.8505 0.10552L0.413556 11.6657L21.8505 23.2271L43.2873 11.6657L21.8505 0.10552ZM21.8505 26.9578L4.39872 17.548L0.413556 19.6966L21.8505 31.2534L43.2873 19.6966L39.3023 17.548L21.8505 26.9578ZM4.39872 25.5731L21.8505 34.9846L39.3023 25.5731L43.2873 27.7205L21.8505 39.2832L0.413556 27.7205L4.39872 25.5731Z"
+                            fill="#555555" />
+                    </svg>
+                    Development</a>
+                <p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                <svg class="services__item_underline" width="70" height="3" viewBox="0 0 70 3" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M-7e-05 -0.000129H69.9999V2.9998H-7e-05V-0.000129Z"
+                        fill="#F1EEE9" />
+                </svg>
+            </div>
+            <div class="services__item customization">
+                <a href="#customization" class="services__item_link">
+                    <svg class="services__item_icon" width="44" height="44" viewBox="0 0 44 44" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M43.9271 21.85C43.9271 20.2297 42.7606 18.5007 41.3216 17.993C39.8817 17.4833 38.4866 16.2353 38.0813 15.2507C37.6753 14.269 37.7807 12.3957 38.4365 11.0169C39.0924 9.63758 38.695 7.5907 37.5496 6.44283C36.4042 5.29663 34.3569 4.90151 32.9767 5.55751C31.5975 6.21434 29.7269 6.32152 28.7458 5.91479C27.7649 5.50972 26.5174 4.1122 26.0051 2.67309C25.4934 1.23398 23.7639 0.067012 22.1437 0.067012C20.5231 0.067012 18.7942 1.23398 18.282 2.67309C17.7701 4.1122 16.5222 5.50889 15.5413 5.91479C14.5597 6.32152 12.6896 6.21434 11.3104 5.55751C9.9315 4.90151 7.88335 5.29663 6.73746 6.44283C5.59178 7.5907 5.19477 9.63758 5.8509 11.0169C6.5072 12.3966 6.61144 14.2665 6.20391 15.2498C5.79608 16.2315 4.40537 17.4833 2.96604 17.993C1.5264 18.5007 0.359876 20.2297 0.359876 21.85C0.359876 23.4707 1.5264 25.1989 2.96604 25.7107C4.40537 26.2229 5.79788 27.4743 6.20576 28.4539C6.61364 29.4344 6.5072 31.3043 5.8509 32.6831C5.19477 34.0616 5.59178 36.1097 6.73746 37.2551C7.88335 38.4021 9.93023 38.7993 11.3104 38.1425C12.6904 37.4865 14.5597 37.381 15.5413 37.7889C16.5232 38.1961 17.7701 39.5941 18.282 41.0323C18.7942 42.4681 20.5231 43.6334 22.1437 43.6334C23.7639 43.6334 25.4934 42.4681 26.0051 41.0323C26.5174 39.5941 27.7631 38.1965 28.7442 37.786C29.7252 37.378 31.5975 37.4865 32.9767 38.1425C34.3559 38.7993 36.4042 38.4021 37.5496 37.2551C38.695 36.1097 39.0924 34.0616 38.4365 32.6831C37.7807 31.3038 37.6735 29.4331 38.0787 28.4531C38.4849 27.4718 39.8817 26.2229 41.3216 25.7107C42.7606 25.1989 43.9271 23.4707 43.9271 21.85ZM22.1437 29.8419C17.724 29.8419 14.1501 26.2703 14.1501 21.8587C14.1501 17.4401 17.724 13.8651 22.1437 13.8651C26.5544 13.8651 30.1278 17.4401 30.1278 21.8587C30.1278 26.2703 26.5544 29.8419 22.1437 29.8419Z"
+                            fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M43.9271 21.85C43.9271 20.2297 42.7606 18.5007 41.3216 17.993C39.8817 17.4833 38.4866 16.2353 38.0813 15.2507C37.6753 14.269 37.7807 12.3957 38.4365 11.0169C39.0924 9.63758 38.695 7.5907 37.5496 6.44283C36.4042 5.29663 34.3569 4.90151 32.9767 5.55751C31.5975 6.21434 29.7269 6.32152 28.7458 5.91479C27.7649 5.50972 26.5174 4.1122 26.0051 2.67309C25.4934 1.23398 23.7639 0.067012 22.1437 0.067012C20.5231 0.067012 18.7942 1.23398 18.282 2.67309C17.7701 4.1122 16.5222 5.50889 15.5413 5.91479C14.5597 6.32152 12.6896 6.21434 11.3104 5.55751C9.9315 4.90151 7.88335 5.29663 6.73746 6.44283C5.59178 7.5907 5.19477 9.63758 5.8509 11.0169C6.5072 12.3966 6.61144 14.2665 6.20391 15.2498C5.79608 16.2315 4.40537 17.4833 2.96604 17.993C1.5264 18.5007 0.359876 20.2297 0.359876 21.85C0.359876 23.4707 1.5264 25.1989 2.96604 25.7107C4.40537 26.2229 5.79788 27.4743 6.20576 28.4539C6.61364 29.4344 6.5072 31.3043 5.8509 32.6831C5.19477 34.0616 5.59178 36.1097 6.73746 37.2551C7.88335 38.4021 9.93023 38.7993 11.3104 38.1425C12.6904 37.4865 14.5597 37.381 15.5413 37.7889C16.5232 38.1961 17.7701 39.5941 18.282 41.0323C18.7942 42.4681 20.5231 43.6334 22.1437 43.6334C23.7639 43.6334 25.4934 42.4681 26.0051 41.0323C26.5174 39.5941 27.7631 38.1965 28.7442 37.786C29.7252 37.378 31.5975 37.4865 32.9767 38.1425C34.3559 38.7993 36.4042 38.4021 37.5496 37.2551C38.695 36.1097 39.0924 34.0616 38.4365 32.6831C37.7807 31.3038 37.6735 29.4331 38.0787 28.4531C38.4849 27.4718 39.8817 26.2229 41.3216 25.7107C42.7606 25.1989 43.9271 23.4707 43.9271 21.85ZM22.1437 29.8419C17.724 29.8419 14.1501 26.2703 14.1501 21.8587C14.1501 17.4401 17.724 13.8651 22.1437 13.8651C26.5544 13.8651 30.1278 17.4401 30.1278 21.8587C30.1278 26.2703 26.5544 29.8419 22.1437 29.8419Z"
+                            fill="#555555" />
+                    </svg>
+                    Customization</a>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                <svg class="services__item_underline" width="70" height="3" viewBox="0 0 70 3" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M-7e-05 -0.000129H69.9999V2.9998H-7e-05V-0.000129Z"
+                        fill="#F1EEE9" />
+                </svg>
+            </div>
+            <div class="services__item marketing">
+                <a href="#marketing" class="services__item_link">
+                    <svg class="services__item_icon" width="52" height="36" viewBox="0 0 52 36" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.7419 9.63698C12.4745 9.63698 10.0023 11.187 8.99974 13.2451L0.738504 30.1475V7.98311C0.738504 6.61878 1.8433 5.5008 3.19566 5.50246H14.0124V4.05756C14.0124 3.06256 14.3941 2.13487 15.0937 1.43028C15.7934 0.722772 16.7171 0.334764 17.7006 0.334764H23.9909C26.0195 0.334764 27.6748 2.00153 27.6748 4.05756V5.5008H38.4913C39.8417 5.5008 40.9486 6.61878 40.9486 7.98311V9.63698H14.7419ZM16.8322 3.18305C16.602 3.41737 16.4696 3.72978 16.4696 4.05756V5.50246H25.2174V4.05756C25.2174 3.37 24.6669 2.81538 23.9886 2.81538H17.6983C17.372 2.81538 17.0627 2.94502 16.8322 3.18305ZM38.3784 35.9836C39.7285 35.9836 41.3263 34.9841 41.9213 33.7627L51.4114 14.3406C52.0086 13.1176 51.3944 12.1151 50.0398 12.1151H14.7419C13.3915 12.1151 11.7962 13.1176 11.2032 14.3406L1.71101 33.7627C1.11166 34.9816 1.73025 35.9836 3.08027 35.9836H38.3784Z"
+                            fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.7419 9.63698C12.4745 9.63698 10.0023 11.187 8.99974 13.2451L0.738504 30.1475V7.98311C0.738504 6.61878 1.8433 5.5008 3.19566 5.50246H14.0124V4.05756C14.0124 3.06256 14.3941 2.13487 15.0937 1.43028C15.7934 0.722772 16.7171 0.334764 17.7006 0.334764H23.9909C26.0195 0.334764 27.6748 2.00153 27.6748 4.05756V5.5008H38.4913C39.8417 5.5008 40.9486 6.61878 40.9486 7.98311V9.63698H14.7419ZM16.8322 3.18305C16.602 3.41737 16.4696 3.72978 16.4696 4.05756V5.50246H25.2174V4.05756C25.2174 3.37 24.6669 2.81538 23.9886 2.81538H17.6983C17.372 2.81538 17.0627 2.94502 16.8322 3.18305ZM38.3784 35.9836C39.7285 35.9836 41.3263 34.9841 41.9213 33.7627L51.4114 14.3406C52.0086 13.1176 51.3944 12.1151 50.0398 12.1151H14.7419C13.3915 12.1151 11.7962 13.1176 11.2032 14.3406L1.71101 33.7627C1.11166 34.9816 1.73025 35.9836 3.08027 35.9836H38.3784Z"
+                            fill="#555555" />
+                    </svg>
+                    Marketing</a>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                <svg class="services__item_underline" width="70" height="3" viewBox="0 0 70 3" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M-7e-05 -0.000129H69.9999V2.9998H-7e-05V-0.000129Z"
+                        fill="#F1EEE9" />
+                </svg>
+            </div>
+        </section>
+    </div>
+    <!--==========Section Services End==========-->
+
+    <!--==========Section Templates==========-->
+    <section class="templates">
+        <div class="wrapper">
+            <div class=templates__wrap>
+                <div class="templates section_title">
+                    <h3>Waxom is Realization of your Ideas.</h3>
+                    <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
+                        etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                </div>
+                <div class="templates_browser"></div>
+            </div>
+        </div>
+        <div class="templates_purchase">
+            <div class="wrapper">
+                <div class="templates__text_box_flex">
+                    <div class="templates__text_box">
+                        <p class="templates__text_box subtitle"><span>Waxom</span> Multipurpose WordPress Theme</p>
+                        <p>Don't Forget to Rate the Template. Thanks so much!</p>
+                    </div>
+                    <button type="button" class="purchase-now">Purchase Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==========Section Templates End==========-->
+
+    <!--==========Section Projects==========-->
+    <section class="projects">
+        <div class="wrapper">
+            <div class="projects section_title">
+                <h3>Our Latest Projects.</h3>
+                <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam
+                    processus dynamicus, qui sequitur mutationem consuetudium.</p>
+            </div>
+            <div class="projects_categories">
+                <button type="button" class="all">All</button>
+                <button type="button" class="web">Web Design</button>
+                <button type="button" class="mobile">Mobile App</button>
+                <button type="button" class="illustration">Illustration</button>
+                <button type="button" class="photography">Photography</button>
+            </div>
+            <div class="projects__wrap">
+                <div class="project project01">
+                    <svg class="arrow" width="32" height="10" viewBox="0 0 32 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.9999 -0.00301L31.0091 9.99757H0.99046L15.9999 -0.00301Z" fill="#FBFAF8" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.9999 -0.00301L31.0091 9.99757H0.99046L15.9999 -0.00301Z" fill="#FBFAF8" />
+                    </svg>
+                    <a href="#project01"><img src="img/projects_photo.jpg" alt="Photography, Nature"></a>
+                    <div class="project__text_box">
+                        <p class="project__title">Claritas Etiam Processus</p>
+                        <p>Photography, Nature</p>
+                    </div>
+                </div>
+                <div class="project project02">
+                    <svg class="arrow" width="32" height="10" viewBox="0 0 32 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.9999 -0.00301L31.0091 9.99757H0.99046L15.9999 -0.00301Z" fill="#FBFAF8" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.9999 -0.00301L31.0091 9.99757H0.99046L15.9999 -0.00301Z" fill="#FBFAF8" />
+                    </svg>
+                    <a href="#project02"><img src="img/projects_photo.jpg" alt="Graphic Design, Mock-Up"></a>
+                    <div class="project__text_box">
+                        <p class="project__title">Quam Nutamus Farum</p>
+                        <p>Graphic Design, Mock-Up</p>
+                    </div>
+                </div>
+                <div class="project project03">
+                    <svg class="arrow" width="32" height="10" viewBox="0 0 32 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.9999 -0.00301L31.0091 9.99757H0.99046L15.9999 -0.00301Z" fill="#FBFAF8" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.9999 -0.00301L31.0091 9.99757H0.99046L15.9999 -0.00301Z" fill="#FBFAF8" />
+                    </svg>
+                    <a href="#project03"><img src="img/projects_photo.jpg" alt="Photography, Holiday"></a>
+                    <div class="project__text_box">
+                        <p class="project__title">Usus Legentis Videntur</p>
+                        <p>Photography, Holiday</p>
+                    </div>
+                </div>
+                <div class="project project04">
+                    <svg class="arrow" width="32" height="10" viewBox="0 0 32 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.9999 -0.00301L31.0091 9.99757H0.99046L15.9999 -0.00301Z" fill="#FBFAF8" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.9999 -0.00301L31.0091 9.99757H0.99046L15.9999 -0.00301Z" fill="#FBFAF8" />
+                    </svg>
+                    <a href="#project04"><img src="img/projects_photo.jpg" alt="Photography, Nature"></a>
+                    <div class="project__text_box">
+                        <p class="project__title">Claritas Etiam Processus</p>
+                        <p>Photography, Nature</p>
+                    </div>
+                </div>
+                <div class="project project05">
+                    <svg class="arrow" width="32" height="10" viewBox="0 0 32 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.9999 -0.00301L31.0091 9.99757H0.99046L15.9999 -0.00301Z" fill="#FBFAF8" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.9999 -0.00301L31.0091 9.99757H0.99046L15.9999 -0.00301Z" fill="#FBFAF8" />
+                    </svg>
+                    <a href="#project05"><img src="img/projects_photo.jpg" alt="Graphic Design, Mock-Up"></a>
+                    <div class="project__text_box">
+                        <p class="project__title">Quam Nutamus Farum</p>
+                        <p>Graphic Design, Mock-Up</p>
+                    </div>
+                </div>
+                <div class="project project06">
+                    <svg class="arrow" width="32" height="10" viewBox="0 0 32 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.9999 -0.00301L31.0091 9.99757H0.99046L15.9999 -0.00301Z" fill="#FBFAF8" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.9999 -0.00301L31.0091 9.99757H0.99046L15.9999 -0.00301Z" fill="#FBFAF8" />
+                    </svg>
+                    <a href="#project06"><img src="img/projects_photo.jpg" alt="Photography, Holiday"></a>
+                    <div class="project__text_box">
+                        <p class="project__title">Usus Legentis Videntur</p>
+                        <p>Photography, Holiday</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project__button">
+                <button type="button" class="load-more">Load more</button>
+            </div>
+        </div>
+    </section>
+
+
 
 
 

@@ -1,0 +1,232 @@
+/* Section Services Start */
+.services {
+    max-width: 1184px;
+    margin:0 auto;
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.services__item {
+    max-width: 296px;
+    height: 213px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    cursor: pointer;
+   }
+
+.services__item:hover .services__item_link, .services__item:active .services__item_link {
+    color: #C7B299;
+}
+
+.services__item:hover .services__item_icon path, .services__item:hover .services__item_underline path {
+    fill:#C7B299;
+}
+
+.services__item_link:focus {color: #C7B299;} 
+
+.services__item_link:focus .services__item_icon path {fill:#C7B299;}
+
+
+.services a {
+    height: 99px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: #555555;
+}
+
+.services p {
+    color: #8C8C8C;
+}
+/* Section Services End */
+
+/* Section Templates Start */
+
+.templates{
+    background-color: #FBFAF8;
+}
+
+.templates__wrap {
+    height: 700px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section_title {
+    max-width: 760px;
+    height: 95px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.templates .section_title {
+    height: 178px;
+    padding-top: 83px;
+
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 30px;
+    color: #555555;    
+}
+
+.section_title p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.templates_browser{
+    height: 482px;
+    margin-top: auto;
+    background: url("../img/browser-center.jpg") no-repeat center bottom,
+    url("../img/browser-left.jpg") no-repeat left bottom,
+    url("../img/browser-right.jpg") no-repeat right bottom;
+}
+
+.templates_purchase {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #211B19 0%, #4E3427 100%), #F4F5F8;
+    margin-bottom: 80px;
+}
+
+.templates__text_box .subtitle {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.templates__text_box .subtitle span {
+    color: #C7B299;
+}
+
+.templates__text_box_flex {
+    width: 1230px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+/* Section Templates End */
+
+/* Section Projects Start */
+
+.projects {
+    margin-bottom: 80px;
+}
+
+.projects .section_title {
+    margin-bottom: 40px;
+}
+
+.projects_categories {
+    width: 606px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+
+.projects_categories button {
+    width: 120px;
+    height: 32px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: #8C8C8C;
+    background: rgba(17, 17, 17, 0.0001);
+    border: 1px solid #EBEBEB;  
+    text-transform: initial;
+    box-shadow: initial;
+}
+
+.projects button:hover , .projects button:focus{
+    background: linear-gradient(0deg, #998675, #998675), #111111;
+    color: #FFFFFF;
+}
+
+.projects .all {
+    width: 70px;
+} 
+
+.projects .photography {
+    width: 137px;
+}
+
+.projects__wrap {
+    width: 1170px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 337px);
+    grid-gap: 30px;
+    margin-bottom: 37px;
+}
+
+.project{
+    position:relative;
+}
+
+.project__text_box {
+    height: 100px;
+    padding-left:30px;
+    background: #FBFAF8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.project p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #D1D1D1;
+}
+
+.project .project__title {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #C7B299;
+}
+
+.project:hover  .project__text_box{
+    background: linear-gradient(0deg, #362F2D, #362F2D), #FBFAF8;
+}
+
+.project:hover .arrow path {fill: #362F2D}
+
+.arrow {
+    position:absolute;
+    top:235px;
+    left: 20px;
+}
+.project__button {
+    text-align: center;
+}
+
